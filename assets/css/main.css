@@ -154,14 +154,11 @@ input, select, textarea {
 		margin: 2em 0 0 0;
 	}
 
-	/* strong, b {
-		font-weight: 300;
-		color: #666;
-	} */
 	strong {
 		font-weight: 300;
 		color: #666;
 	}
+	
 	b {
 		font-weight: bold;
 		color: #666;
@@ -1765,7 +1762,7 @@ input, select, textarea {
 		.image.avatar48 {
 			width: 48px;
 			height: 48px;
-			background: #f00;
+			background-color: transparent;
 		}
 
 			.image.avatar48 img {
@@ -1773,10 +1770,12 @@ input, select, textarea {
 				height: 48px;
 			}
 
-		.image.fit {
+		 .image.fit {
 			display: block;
 			width: 100%;
-		}
+			border: 2px solid black;
+			box-sizing: border-box;
+		 }
 
 		.image.featured {
 			display: block;
